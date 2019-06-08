@@ -1,0 +1,16 @@
+SomeLanguageParser$ArgumentContext.class
+SomeLanguageParser$ClassNameContext.class
+SomeLanguageLexer.class
+SomeLanguageParser$FunctionCallContext.class
+SomeLanguageParser$InstructionContext.class
+SomeLanguageVisitor.class
+SomeLanguageParser$VariableDeclarationContext.class
+SomeLanguageParser.class
+SomeLanguageParser$ExpressionContext.class
+SomeLanguageBaseVisitor.class
+SomeLanguageParser$FunctionContext.class
+SomeLanguageParser$AssignmentContext.class
+SomeLanguageParser$ValueContext.class
+SomeLanguageBaseListener.class
+SomeLanguageListener.class
+SomeLanguageParser$ClassDeclarationContext.class

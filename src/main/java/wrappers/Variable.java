@@ -18,4 +18,28 @@ public class Variable {
         this.name = name;
         this.value = null;
     }
+
+    public String parse() {
+
+        StringBuilder sb = new StringBuilder();
+        if (type.equals("printf")) {
+            sb.append("System.out.println(");
+            sb.append(value);
+            sb.append(");\n");
+        }
+        else if(type.equals("function")) {
+            sb.append(name);
+            sb.append(" = ");
+            sb.append(value);
+            sb.append(";\n");
+        }
+        else {
+            sb.append(value == null ? (type + " ") : "");
+//            sb.append(" ");
+            sb.append(name);
+            sb.append(value == null ? "" : (" = " + value));
+            sb.append(";\n");
+        }
+        return sb.toString();
+    }
 }

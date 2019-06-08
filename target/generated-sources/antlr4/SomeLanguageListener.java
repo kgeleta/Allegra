@@ -27,16 +27,6 @@ public interface SomeLanguageListener extends ParseTreeListener {
 	 */
 	void exitClassName(SomeLanguageParser.ClassNameContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SomeLanguageParser#instruction}.
-	 * @param ctx the parse tree
-	 */
-	void enterInstruction(SomeLanguageParser.InstructionContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link SomeLanguageParser#instruction}.
-	 * @param ctx the parse tree
-	 */
-	void exitInstruction(SomeLanguageParser.InstructionContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link SomeLanguageParser#variableDeclaration}.
 	 * @param ctx the parse tree
 	 */
@@ -106,4 +96,34 @@ public interface SomeLanguageListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitFunctionCall(SomeLanguageParser.FunctionCallContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SomeLanguageParser#logicalEquation}.
+	 * @param ctx the parse tree
+	 */
+	void enterLogicalEquation(SomeLanguageParser.LogicalEquationContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SomeLanguageParser#logicalEquation}.
+	 * @param ctx the parse tree
+	 */
+	void exitLogicalEquation(SomeLanguageParser.LogicalEquationContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SomeLanguageParser#printfCall}.
+	 * @param ctx the parse tree
+	 */
+	void enterPrintfCall(SomeLanguageParser.PrintfCallContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SomeLanguageParser#printfCall}.
+	 * @param ctx the parse tree
+	 */
+	void exitPrintfCall(SomeLanguageParser.PrintfCallContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SomeLanguageParser#line}.
+	 * @param ctx the parse tree
+	 */
+	void enterLine(SomeLanguageParser.LineContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SomeLanguageParser#line}.
+	 * @param ctx the parse tree
+	 */
+	void exitLine(SomeLanguageParser.LineContext ctx);
 }

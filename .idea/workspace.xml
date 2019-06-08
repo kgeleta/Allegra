@@ -1,7 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98fa3599-499b-4a3d-9859-fd1e5402ac22" name="Default Changelist" comment="" />
+    <list default="true" id="98fa3599-499b-4a3d-9859-fd1e5402ac22" name="Default Changelist" comment="working base version">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/antlr4/SomeLanguage.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/SomeLanguage.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/generated/SomeLanguage.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generated/SomeLanguage.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/generated/SomeLanguageBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generated/SomeLanguageBaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/generated/SomeLanguageBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generated/SomeLanguageBaseVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/generated/SomeLanguageLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generated/SomeLanguageLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/generated/SomeLanguageLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generated/SomeLanguageLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/generated/SomeLanguageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generated/SomeLanguageListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/generated/SomeLanguageParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generated/SomeLanguageParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/generated/SomeLanguageVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generated/SomeLanguageVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wrappers/Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wrappers/Class.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wrappers/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wrappers/Function.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wrappers/Variable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wrappers/Variable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestCompilers-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestCompilers-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MyVisitor$ArgumentListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyVisitor$ArgumentListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MyVisitor$AssignmentListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyVisitor$AssignmentListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MyVisitor$ClassListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyVisitor$ClassListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MyVisitor$FunctionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyVisitor$FunctionListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MyVisitor$InstructionListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MyVisitor$ValueListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyVisitor$ValueListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MyVisitor$VariableDeclarationListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyVisitor$VariableDeclarationListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MyVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SomeLanguageBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SomeLanguageBaseListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SomeLanguageBaseVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SomeLanguageBaseVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SomeLanguageLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SomeLanguageLexer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SomeLanguageListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SomeLanguageListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SomeLanguageParser$ArgumentContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SomeLanguageParser$ArgumentContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SomeLanguageParser$AssignmentContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SomeLanguageParser$AssignmentContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SomeLanguageParser$ClassDeclarationContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SomeLanguageParser$ClassDeclarationContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SomeLanguageParser$ClassNameContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SomeLanguageParser$ClassNameContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SomeLanguageParser$ExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SomeLanguageParser$ExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SomeLanguageParser$FunctionCallContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SomeLanguageParser$FunctionCallContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SomeLanguageParser$FunctionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SomeLanguageParser$FunctionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SomeLanguageParser$InstructionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SomeLanguageParser$ValueContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SomeLanguageParser$ValueContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SomeLanguageParser$VariableDeclarationContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SomeLanguageParser$VariableDeclarationContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SomeLanguageParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SomeLanguageParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SomeLanguageVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SomeLanguageVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generated/SomeLanguageBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generated/SomeLanguageBaseListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generated/SomeLanguageBaseVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generated/SomeLanguageBaseVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generated/SomeLanguageLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generated/SomeLanguageLexer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generated/SomeLanguageListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generated/SomeLanguageListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generated/SomeLanguageParser$ArgumentContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generated/SomeLanguageParser$ArgumentContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generated/SomeLanguageParser$AssignmentContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generated/SomeLanguageParser$AssignmentContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generated/SomeLanguageParser$ClassDeclarationContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generated/SomeLanguageParser$ClassDeclarationContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generated/SomeLanguageParser$ClassNameContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generated/SomeLanguageParser$ClassNameContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generated/SomeLanguageParser$ExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generated/SomeLanguageParser$ExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generated/SomeLanguageParser$FunctionCallContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generated/SomeLanguageParser$FunctionCallContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generated/SomeLanguageParser$FunctionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generated/SomeLanguageParser$FunctionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generated/SomeLanguageParser$InstructionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generated/SomeLanguageParser$ValueContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generated/SomeLanguageParser$ValueContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generated/SomeLanguageParser$VariableDeclarationContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generated/SomeLanguageParser$VariableDeclarationContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generated/SomeLanguageParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generated/SomeLanguageParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generated/SomeLanguageVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generated/SomeLanguageVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/wrappers/Class.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wrappers/Class.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/wrappers/Function.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wrappers/Function.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/wrappers/Variable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wrappers/Variable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/SomeLanguage.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/SomeLanguage.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/SomeLanguageBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/SomeLanguageBaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/SomeLanguageBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/SomeLanguageBaseVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/SomeLanguageLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/SomeLanguageLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/SomeLanguageLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/SomeLanguageLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/SomeLanguageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/SomeLanguageListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/SomeLanguageParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/SomeLanguageParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/SomeLanguageVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/SomeLanguageVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,26 +86,14 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.36434612">
+    <splitter split-orientation="horizontal" split-proportion="0.37365422">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/antlr4/SomeLanguage.g4">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/wrappers/Variable.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state relative-caret-position="34">
+                  <caret line="2" column="86" selection-start-line="2" selection-start-column="86" selection-end-line="2" selection-end-column="86" />
                 </state>
               </provider>
             </entry>
@@ -41,8 +101,21 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/wrappers/Function.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+                <state relative-caret-position="204">
+                  <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#636#646#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="278">
+                  <caret line="28" column="41" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="41" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -51,10 +124,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+            <entry file="file://$PROJECT_DIR$/src/main/resources/test.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+                <state relative-caret-position="476">
+                  <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
                 </state>
               </provider>
             </entry>
@@ -72,11 +145,23 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/MyVisitor.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="429">
-                  <caret line="176" column="111" selection-start-line="176" selection-start-column="111" selection-end-line="176" selection-end-column="111" />
+                <state relative-caret-position="153">
+                  <caret line="64" column="92" selection-start-line="64" selection-start-column="92" selection-end-line="64" selection-end-column="92" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/wrappers/Class.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="324">
+                  <caret line="35" column="58" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -85,10 +170,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/wrappers/Class.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/wrappers/Variable.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+                <state relative-caret-position="612">
+                  <caret line="36" column="51" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -106,6 +191,14 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Krzysztof Geleta &lt;kgeleta@student.agh.edu.pl&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -126,12 +219,14 @@
         <option value="$PROJECT_DIR$/src/main/java/wrappers/Method.java" />
         <option value="$PROJECT_DIR$/src/main/java/wrappers/Instruction.java" />
         <option value="$PROJECT_DIR$/src/main/java/wrappers/VariableDeclaration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/wrappers/Class.java" />
         <option value="$PROJECT_DIR$/src/main/java/wrappers/Variable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/wrappers/Function.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/antlr4/SomeLanguage.g4" />
         <option value="$PROJECT_DIR$/src/main/java/MyVisitor.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/test.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/wrappers/Function.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MojaKlasa.java" />
+        <option value="$PROJECT_DIR$/src/main/java/wrappers/Class.java" />
       </list>
     </option>
   </component>
@@ -167,6 +262,9 @@
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1057" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -248,6 +346,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/generated" />
@@ -256,6 +355,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -282,9 +382,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="TestCompilers" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MojaKlasa" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MojaKlasa" />
       <module name="TestCompilers" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -293,6 +400,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.MojaKlasa" />
       </list>
     </recent_temporary>
   </component>
@@ -308,38 +416,46 @@
       <updated>1559926239599</updated>
       <workItem from="1559926245796" duration="3089000" />
       <workItem from="1559981376703" duration="4351000" />
-      <workItem from="1559985807731" duration="8703000" />
+      <workItem from="1559985807731" duration="16359000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16143000" />
+    <option name="totallyTimeSpent" value="23799000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Learn" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.18070363" />
+      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.15831557" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Tool Output" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.3290461" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.3290461" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="ANTLR Preview" order="5" weight="0.3279743" />
-      <window_info anchor="bottom" id="Messages" order="6" weight="0.32832617" />
+      <window_info active="true" anchor="bottom" id="Messages" order="6" visible="true" weight="0.3279743" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.3215434" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.30472103" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="bottom" id="TODO" order="14" weight="0.3290461" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info anchor="right" id="Maven" order="2" weight="0.32995737" />
@@ -352,6 +468,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="working base version" />
+    <option name="LAST_COMMIT_MESSAGE" value="working base version" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/ListnerOrientedParser.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/generated/SomeLanguageBaseVisitor.java">
@@ -361,24 +481,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/generated/SomeLanguageListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/generated/SomeLanguageParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/generated/SomeLanguageVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -426,10 +532,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wrappers/Class.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/generated/SomeLanguage.tokens">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/antlr4/SomeLanguage.g4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="34">
+          <caret line="2" column="86" selection-start-line="2" selection-start-column="86" selection-end-line="2" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MyVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="64" column="92" selection-start-line="64" selection-start-column="92" selection-end-line="64" selection-end-column="92" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -438,38 +554,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/wrappers/Variable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wrappers/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/SomeLanguage.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/generated/SomeLanguage.tokens">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MyVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="176" column="111" selection-start-line="176" selection-start-column="111" selection-end-line="176" selection-end-column="111" />
+        <state relative-caret-position="612">
+          <caret line="36" column="51" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -478,8 +564,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="28" column="41" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wrappers/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="35" column="58" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MojaKlasa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wrappers/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#636#646#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/generated/SomeLanguageVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="54" column="61" selection-start-line="54" selection-start-column="61" selection-end-line="54" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/generated/SomeLanguageListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="99" column="61" selection-start-line="99" selection-start-column="61" selection-end-line="99" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
         </state>
       </provider>
     </entry>

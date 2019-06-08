@@ -10,15 +10,17 @@ import org.antlr.v4.runtime.misc.NotNull;
 import wrappers.*;
 import wrappers.Class;
 
+import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.Collection;
 
 public class MyVisitor {
 
-    public Class parse(String source) {
+    public Class parse(String source) throws Exception {
 
 //        String source = "";
-        CharStream imput = new ANTLRInputStream(source);
+//        new ANTLRInputStream(new FileInputStream("C:\\Users\\Leslie\\IdeaProjects\\compilers\\src\\test\\java\\test.txt"));
+        CharStream imput = new ANTLRInputStream(new FileInputStream(source));
         SomeLanguageLexer lexer = new SomeLanguageLexer(imput);
         TokenStream tokens = new CommonTokenStream(lexer);
         SomeLanguageParser parser = new SomeLanguageParser(tokens);
@@ -47,6 +49,10 @@ public class MyVisitor {
             for(SomeLanguageParser.FunctionContext function : ctx.function())
                 function.enterRule(functionListener);
 
+            LineListener lineListener = new LineListener();
+            for (SomeLanguageParser.LineContext line : ctx.line())
+                line.enterRule(lineListener);
+
 //            // handle methods
 //            MethodListener methodListener = new MethodListener();
 //            for(SomeLanguageParser.MethodContext method : ctx.method())
@@ -55,7 +61,8 @@ public class MyVisitor {
             Collection<Variable> variables = variableDeclarationListener.getVariables();
             Collection<Function> functions = functionListener.getFunctions();
 //            Collection<Method> methods = methodListener.getMethods();
-            parsedClass = new Class(className, variables, functions);
+
+            parsedClass = new Class(className, variables, functions, lineListener.getLines());
         }
     }
 
@@ -83,21 +90,21 @@ public class MyVisitor {
 //
 //    }
 
-    @Data
-    class InstructionListener extends SomeLanguageBaseListener {
-
-        private Collection<Instruction> instructions;
-
-        public InstructionListener() {
-            instructions = new ArrayList<Instruction>();
-        }
-
-        @Override
-        public void enterInstruction(@NotNull SomeLanguageParser.InstructionContext ctx) {
-            String instructionName = ctx.getText();
-            instructions.add(new Instruction(instructionName));
-        }
-    }
+//    @Data
+//    class InstructionListener extends SomeLanguageBaseListener {
+//
+//        private Collection<Instruction> instructions;
+//
+//        public InstructionListener() {
+//            instructions = new ArrayList<Instruction>();
+//        }
+//
+//        @Override
+//        public void enterInstruction(@NotNull SomeLanguageParser.InstructionContext ctx) {
+//            String instructionName = ctx.getText();
+//            instructions.add(new Instruction(instructionName));
+//        }
+//    }
 
     @Data
     class VariableDeclarationListener extends SomeLanguageBaseListener {
@@ -151,17 +158,68 @@ public class MyVisitor {
                 ctx.argument().enterRule(argumentListener);
             String returnType = ctx.TYPE().getText();
 
-            // handle instructions
-            InstructionListener instructionListener = new InstructionListener();
-            for(SomeLanguageParser.InstructionContext instruction : ctx.instruction())
-                instruction.enterRule(instructionListener);
+//            // handle instructions
+//            InstructionListener instructionListener = new InstructionListener();
+//            for(SomeLanguageParser.InstructionContext instruction : ctx.instruction())
+//                instruction.enterRule(instructionListener);
+//
+//            //handle assignments
+//            AssignmentListener assignmentListener = new AssignmentListener();
+//            for(SomeLanguageParser.AssignmentContext assignment : ctx.assignment())
+//                assignment.enterRule(assignmentListener);
 
-            //handle assignments
-            AssignmentListener assignmentListener = new AssignmentListener();
-            for(SomeLanguageParser.AssignmentContext assignment : ctx.assignment())
-                assignment.enterRule(assignmentListener);
+            //handle lines
+            LineListener lineListener = new LineListener();
+            for(SomeLanguageParser.LineContext line : ctx.line())
+                line.enterRule(lineListener);
 
-            functions.add(new Function(name, argumentListener.getArguments(), returnType, instructionListener.getInstructions(), assignmentListener.getVariables()));
+            String retStatement = ctx.value().getText();
+
+            functions.add(new Function(name, argumentListener.getArguments(), returnType, lineListener.getLines(), retStatement));
+        }
+    }
+
+    @Data
+    class LineListener extends SomeLanguageBaseListener {
+
+        private Collection<Variable> lines;
+
+        public LineListener() {
+            lines = new ArrayList<Variable>();
+        }
+
+        @Override
+        public void enterLine(SomeLanguageParser.LineContext ctx) {
+            if (ctx.assignment() != null) {
+                AssignmentListener assignmentListener = new AssignmentListener();
+                ctx.assignment().enterRule(assignmentListener);
+                lines.addAll(assignmentListener.getVariables());
+            }
+
+            else if(ctx.printfCall() != null) {
+                PrintfListener printfListener = new PrintfListener();
+                ctx.printfCall().enterRule(printfListener);
+                lines.addAll(printfListener.getPrintfy());
+            }
+
+        }
+    }
+
+    @Data
+    class PrintfListener extends SomeLanguageBaseListener {
+
+        private Collection<Variable> printfy;
+
+        public PrintfListener() {
+            this.printfy = new ArrayList<Variable>();
+        }
+
+        @Override
+        public void enterPrintfCall(SomeLanguageParser.PrintfCallContext ctx) {
+            String type = "printf";
+            String value = ctx.value().getText();
+
+            printfy.add(new Variable(type, type, value));
         }
     }
 

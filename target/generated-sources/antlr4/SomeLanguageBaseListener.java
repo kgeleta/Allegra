@@ -39,18 +39,6 @@ public class SomeLanguageBaseListener implements SomeLanguageListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterInstruction(SomeLanguageParser.InstructionContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitInstruction(SomeLanguageParser.InstructionContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterVariableDeclaration(SomeLanguageParser.VariableDeclarationContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -130,6 +118,42 @@ public class SomeLanguageBaseListener implements SomeLanguageListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitFunctionCall(SomeLanguageParser.FunctionCallContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterLogicalEquation(SomeLanguageParser.LogicalEquationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitLogicalEquation(SomeLanguageParser.LogicalEquationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterPrintfCall(SomeLanguageParser.PrintfCallContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitPrintfCall(SomeLanguageParser.PrintfCallContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterLine(SomeLanguageParser.LineContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitLine(SomeLanguageParser.LineContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

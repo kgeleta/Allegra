@@ -1,13 +1,14 @@
 grammar SomeLanguage ;
 
-classDeclaration : CLASS className IS (variableDeclaration)* (function)* BEGIN END;
+classDeclaration : CLASS className IS (variableDeclaration)* (function)* BEGIN (line)* END;
 className : ID ;
 
-instruction : ID SEMI ;
+//instruction : ID SEMI ;
+
 
 variableDeclaration : TYPE ID SEMI ;
 
-function : FUNCTION ID LEFT_PAREN (argument)? RIGHT_PAREN RETURN TYPE IS BEGIN (instruction | assignment)* END ;
+function : FUNCTION ID LEFT_PAREN (argument)? RIGHT_PAREN RETURN TYPE IS BEGIN (line)* RETURN value SEMI END ;
 argument : (TYPE COLON ID COMMA)*(TYPE COLON ID) ;
 
 assignment : ID ASSIGN value SEMI;
@@ -22,6 +23,15 @@ expression : expression (TIMES | DIV) expression
 
 
 functionCall : ID LEFT_PAREN ((value COMMA)* value)? RIGHT_PAREN ;
+
+
+logicalEquation : logicalEquation (AND | OR) logicalEquation
+    | LEFT_PAREN logicalEquation RIGHT_PAREN
+    | expression ( EQUAL | GREATER_EQUAL | GREATER | LESSER | LESSER_EQUAL) expression ;
+
+printfCall : PRINTF LEFT_PAREN value RIGHT_PAREN SEMI;
+
+line : ( assignment | printfCall) ;
 
 CLASS : 'class' ;
 IS : 'is' ;
@@ -41,6 +51,19 @@ COMMA : ',' ;
 
 LEFT_PAREN : '(' ;
 RIGHT_PAREN : ')' ;
+
+EQUAL : '==' ;
+GREATER : '>' ;
+LESSER : '<' ;
+GREATER_EQUAL : '>=';
+LESSER_EQUAL : '<=';
+
+AND : '&&' ;
+OR : '||' ;
+
+PRINTF : 'printf' ;
+
+RELATION_OPERATOR : ( EQUAL | GREATER_EQUAL | GREATER | LESSER | LESSER_EQUAL) ;
 
 ASSIGN : ':=' ;
 
